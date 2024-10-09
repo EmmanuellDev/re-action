@@ -21,5 +21,18 @@ JSX
 * JSX functionalities can be used in .js files
 * JavaScript XML is a syntax extension that allows you to write HTML-like code within JavaScript & it can be used in both .js and .jsx files
 
+Props
+* Props is an object that contains the attributes and values which have been passed from the component
+* It can be used in both class and functional component
+* In func component, you can directly use {props.object_name}, whereas in class component, you need to use this keyword, {this.props.object_name}
+* Props are immutable (unchangable)
 
+State
+* States are mutable
+* In func component, you can directly use useState, whereas in class component, you need to use this keyword, {this.state}
+* The state must be inside the constructor and super() keyword must be used
+* State value can be changed by using setState method
 
+Deconstructor
+* It is used to split the object or variable into small divisions using const
+* It can be used in both class and functional component

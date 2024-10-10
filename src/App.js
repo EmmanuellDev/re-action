@@ -18,12 +18,14 @@ import Inline from './components/css styling/Inline';
 import './appStyles.css'
 import styles from '../src/'
 import Form from './components/Form';
+import LifecycleA from './lifeCycleMethods/Mounting/LifecycleA';
 
 class App extends Component {
 render() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleA />
+      {/* <Form /> */}
       {/* <h2 className='error'>Error</h2>
       <h2 className={styles.success}>Success</h2>
       <Inline />

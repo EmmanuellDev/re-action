@@ -49,3 +49,66 @@ Keys
 
 preventDefault
 * It is used to prevent the web pages from loading after any submission occurs.
+
+LifeCycle Methods
+=> Mounting
+=> Updatinng
+=> Unmounting
+=> Error Handling
+
+1. Mounting
+=> Countructor (props)
+* It is a special function that will get called whenever a new component is created
+* It is used to initilize a state and binding the event handlers
+* It must contain super(props) and here only you can overwrite this.state
+
+=> static getDerivedStateFromProps(props, state)
+* It is useful when the state of the component depends on changes in props over time
+* It is used to set the State
+
+=> render ()
+* It is the only required method
+* It is used to read props and state and return JSX
+* It cannot be useful in changing state or interaction with DOM or make ajax calls
+* Child component lifecycle methods are also executed
+
+componentDidMount()
+* It is invoked immediately after a component and all its children components have been rendered to the DOm
+* It can cause side effects like interact with the DOM or perform any ajax calls to load data
+
+2. Updating
+=> static getDerivedStateFromProps(props, state)
+* It is useful when the state of the component depends on changes in props over time
+* It is used to set the State
+
+=> shouldComponentUpdate (nextProps, nextState)
+* It dictates if the component should rerender or not
+* It is useful in performance of optimization
+
+=> render ()
+* It is the only required method
+* It is used to read props and state and return JSX
+* It cannot be useful in changing state or interaction with DOM or make ajax calls
+* Child component lifecycle methods are also executed
+
+=> getSnapshotBeforeUpdate (prevProps, prevState)
+* It is called right before the changes from the virtual DOM are to be reflected in the DOM
+* It is used to capture some info from the DOM
+* Method will either return null or a value. Returned value will be passed as the third parameter to the next method
+
+=> componentDidUpdate(prevProps, prevState, snapshot)
+* It called after the render is finished in the re-render cycles
+* It causes side effects
+
+3. Unmounting
+ => componentWillUnmount()
+ * This method is invoked immediately before a component is unmounted and destroyed
+ * It is useful in cancelling any network requests, removing event handlers, cancelling any subscriptions and also invalidating timers
+ * Do not call the setState method
+
+4. Error Handling
+=> static getDerivedStateFromError(error)
+* When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component.
+
+=> componentDidCatch(error, info)
+* When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component.

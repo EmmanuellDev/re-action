@@ -112,3 +112,9 @@ componentDidMount()
 
 => componentDidCatch(error, info)
 * When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component.
+
+Regular Component
+* A regular component does not implement the shouldComponentUpdate method. It always returns true by default
+
+Pure Component
+* A pure component on the other hand implements shouldComponentUpdate with a shallow props and state comparison

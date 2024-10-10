@@ -10,14 +10,19 @@ import ClassClick from './components/Event-Handling/Class-click';
 import EventBind from './components/Event-Handling/EventBind';
 import ParentComp from './components/Event-Handling/ParentComp';
 import ChildComp from './components/Event-Handling/ChildComp';
+import UserGreeting from './components/conditonal rendering/UserGreeting';
+import NameList from './components/List-Rendering/NameList';
+import Person from './components/List-Rendering/Person';
 
 
 class App extends Component {
 render() {
   return (
     <div className="App">
+      {/* <Person />
+      <UserGreeting />
       <ParentComp />
-      {/* <EventBind />
+      <EventBind />
       <FuncClick />
       <ClassClick />
       <Counter />

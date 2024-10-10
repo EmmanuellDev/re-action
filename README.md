@@ -40,3 +40,10 @@ Deconstructor
 Event Handling
 * It can be used in both class and functional component
 * Bind is a keyword used to define the this keyword. By using the bind keyword, the this keyword will no more be Undefined
+
+Keys
+* A key is a special string attribute you need to include when creating lists of elements
+* Keys give the elements a stable identity
+* Keys help React identify which items have changed, are added, or are removed
+* Help in efficient update of the user interface
+

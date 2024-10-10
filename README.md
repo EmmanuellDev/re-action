@@ -36,3 +36,7 @@ State
 Deconstructor
 * It is used to split the object or variable into small divisions using const
 * It can be used in both class and functional component
+
+Event Handling
+* It can be used in both class and functional component
+* Bind is a keyword used to define the this keyword. By using the bind keyword, the this keyword will no more be Undefined

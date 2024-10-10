@@ -13,13 +13,23 @@ import ChildComp from './components/Event-Handling/ChildComp';
 import UserGreeting from './components/conditonal rendering/UserGreeting';
 import NameList from './components/List-Rendering/NameList';
 import Person from './components/List-Rendering/Person';
-
+import Stylesheet from './components/css styling/Stylesheet';
+import Inline from './components/css styling/Inline';
+import './appStyles.css'
+import styles from '../src/'
+import Form from './components/Form';
 
 class App extends Component {
 render() {
   return (
     <div className="App">
-      {/* <Person />
+      <Form />
+      {/* <h2 className='error'>Error</h2>
+      <h2 className={styles.success}>Success</h2>
+      <Inline />
+      <Stylesheet primary='true'/>
+      <NameList />
+      <Person />
       <UserGreeting />
       <ParentComp />
       <EventBind />

@@ -47,3 +47,5 @@ Keys
 * Keys help React identify which items have changed, are added, or are removed
 * Help in efficient update of the user interface
 
+preventDefault
+* It is used to prevent the web pages from loading after any submission occurs.

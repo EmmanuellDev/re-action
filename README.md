@@ -118,3 +118,8 @@ Regular Component
 
 Pure Component
 * A pure component on the other hand implements shouldComponentUpdate with a shallow props and state comparison
+* It is used only in class component
+
+Memo Component
+* Similar to every component but i will not re-render
+* It an also be used in functional components too

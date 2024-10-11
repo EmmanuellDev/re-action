@@ -23,12 +23,26 @@ import FragmentDemo from './components/fragments/FragmentDemo';
 import Tables from './components/fragments/Tables';
 import ParentComponent from './components/Pure-Comp/ParentComponent';
 import RefsDemo from './components/Refs/RefsDemo';
+import Hero from './lifeCycleMethods/errorHandling/Hero';
+import Click from './components/HigherOrderComp/Click';
+import Hover from './components/HigherOrderComp/Hover';
+import ComponentC from './components/Context/ComponentC';
+import { UserProvider } from './components/Context/UserContext';
 
 class App extends Component {
 render() {
   return (
     <div className="App">
-      <RefsDemo />
+      <UserProvider value='Emman'>
+        <ComponentC />
+        </UserProvider>
+      {/* <Click />
+      <Hover /> */}
+      {/* <Hero heroName="Emman"/>
+      <Hero heroName="Batman"/>
+      <Hero heroName="Spider Man"/> */}
+      {/* <Hero heroName='Joker'/> */}
+      {/* <RefsDemo /> */}
       {/* <ParentComponent /> */}
       {/* <Tables /> */}
       {/* <FragmentDemo /> */}
